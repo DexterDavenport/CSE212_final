@@ -1,6 +1,6 @@
-# Python Fundamentals Tutorial
+# Programming with Data Structures Tutorial
 ## I. Welcome
-* Welcome to my Understanding of Programming with Data Structures documentation.
+* Welcome to my Understanding of Programming with Data Structures documentation. In this documentation I will be showing you how to use queues, Linked list, and Trees using the programming language Python.
 * dav20041@byui.edu - (480)561-8469
 ## II. Queues
 * Introduction
