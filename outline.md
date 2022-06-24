@@ -2,25 +2,24 @@
 ## I. [Welcome](0-welcome.md)
 * Welcome to my Understanding of Programming with Data Structures. In this documentation I will be showing you how to use queues, Linked list, and Trees using the programming language Python.
 * Contact Info: dav20041@byui.edu - (480)561-8469
-## II. [Queues](1-queue.md)
+## II. [Stacks](1-stacks.md)
 * Introduction
-* Boolean Expressions
-* Multiple Conditions
-* Example
-* Problem to Solve
+* Pringles Example <!--Last pringle in the container is the first one out-->
+* Code Example
+* Practice Code
+* Practice Code Solution
 ## III. [Linked List](2-linked_list.md)
 * Introduction
-* For Loops (Iterators)
-* Using Range with For Loops
-* While Loops
-* Example
-* Problem to Solve
+* Nodes Explained <!--Explain heads and tails and relate it to a chaine-->
+* Code Example
+* Practice Code
+* Practice Code Solution
 ## IV. [Trees](3-trees.md)
 * Introduction
-* Structure of a Python Function
-* Organizing Functions
-* Example
-* Problem to Solve
+* Roots Example<!--Explain that a tree in coding looks more like the roots than a branch and show visual examples-->
+* Code Example
+* Practice Code
+* Practice Code Solution
 
 
 <!-- 
