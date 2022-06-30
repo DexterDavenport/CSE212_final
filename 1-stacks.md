@@ -14,4 +14,4 @@ Some of the terms that you need to understand when working with stacks are: Push
 * Front - Using the Pringle example, This would be the bottom of the can/ the first chips placed into the can
 * Back - This refers to the side with the most recent items added to the stack
 
-<img src="terms.jpeg" alt="drawing" />
+<img src="terms.jpeg" alt="drawing" width= "300"/>
