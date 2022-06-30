@@ -2,22 +2,22 @@
 Stacks is a data structure that uses the LIFO (last in, first out) method. This is used as a way to prioritize the order in which task are complete within your program. 
 
 # I. Pringles
-A good example of the LIFO rule would be to look at a can of Prigles. With this, the factory will load all of the chips into a cylinder can. The first chip in the can will go to the very bottom. Every following chip will be placed on top of the previous chip. With this, the first chip that he consumer can access is the last chip that was placed into the can. The last chip in is the first chip out. 
+A good example of the LIFO rule would be to look at a can of Pringles. With this, the factory will load all of the chips into a cylinder can. The first chip in the can will go to the very bottom. Every following chip will be placed on top of the previous chip. With this, the first chip that the consumer can access is the last chip that was placed into the can. The last chip in is the first chip out. 
 
 <img src="pringles.jpeg" alt="pringles" width="300" />
 
 # II. Terms
-Some of the terms that you need to understand when working with stacks are: Push, Pop, Front, and Back
+Some of the terms that you need to understand when working with stacks are Push, Pop, Front, and Back
 
 * Push - This is when you place an item into the stack
 * Pop - This is when you remove an Item from the stack
-* Front - Using the Pringle example, This would be the bottom of the can/ the first chips placed into the can
+* Front - Using the Pringle example, this would be the bottom of the can/ the first chips placed into the can
 * Back - This refers to the side with the most recent items added to the stack
 
 <img src="terms.jpeg" alt="terms" width= "300"/>
 
 # III. Coding With Stacks
-Working with stacks is not that difficult. In fact, there is a chance that you have already used this method before without knowing. To understand how to use stacks in python we need to lay the ground work. 
+Working with stacks is not that difficult. In fact, there is a chance that you have already used this method before without knowing. To understand how to use stacks in python we need to lay the groundwork. 
 
 First off, creating the stack. This can be done by typing the name you want for the stack, an equal sign, then an empty bracket.
 ``` python
@@ -29,13 +29,13 @@ stack = ['A', 'B', 'C']
 ```
 In this example, 'A' would be the Front of the stack with 'C' as the Back.
 
-If we were to push an item to the empty list above, we would use the 'append' opperation. Append adds an item to the back of the stack. This can be done using this method.
+If we were to push an item to the empty list above, we would use the 'append' operation. Append adds an item to the back of the stack. This can be done using this method.
 ``` python
 stack = []
 stack.append('A')
 # If we were print stack from this point it would display "['A']"
 ```
-If we wanted to remove an item from a list we would use the 'pop' opperation. This will remove the most recent item added to the stack. This can be done using the following method:
+If we wanted to remove an item from a stack, we would use the 'pop' operation. This will remove the most recent item added to the stack. This can be done using the following method:
 ``` python
 stack = ['A', 'B', 'C']
 stack.pop()
@@ -54,7 +54,7 @@ stack.pop(1)
 </details>
 
 <details>
-<summary>Extra Opperations To Use With Stacks:</summary>
+<summary>Extra Operations To Use With Stacks:</summary>
 
 ``` python
 stack = ['A', 'B', 'C']
@@ -74,7 +74,7 @@ In this example I would like you to take this code and attempt to solve it on yo
 
 ``` python
 '''
-For this activity, you are goin to populate this code to add the phrase 'This code 
+For this activity, you are going to populate this code to add the phrase 'This code 
 is successful' to a stack ONE WORD AT A TIME. You will then remove that phrase ONE
 WORD AT A TIME. You will start with an empty list and end with an empty list.
 
@@ -85,22 +85,21 @@ Hint: You could use a for loop to remove each item from the list.
 def add_remove(stack):
     print(stack)
 
-    # add to stack below here
+    # Add to stack below here
     
-    # add to stack above here
+    # Add to stack above here
 
     print(*stack, sep = " ") # print each item in the stack with a space between
 
-    # remove from stack below here
+    # Remove from stack below here
     
-    # remove from stack abovehere
-    
+    # Remove from stack above here
+
     print(stack)
 stack = []
 add_remove(stack)
 
 ```
-
 
 
 <details>
@@ -113,7 +112,7 @@ CSE 212
 June 30, 2022
 '''
 '''
-For this activity, you are goin to populate this code to add the phrase 'This code 
+For this activity, you are going to populate this code to add the phrase 'This code 
 is successful' to a stack ONE WORD AT A TIME. You will then remove that phrase ONE
 WORD AT A TIME. You will start with an empty list and end with an empty list. 
 
