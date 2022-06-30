@@ -15,3 +15,48 @@ Some of the terms that you need to understand when working with stacks are: Push
 * Back - This refers to the side with the most recent items added to the stack
 
 <img src="terms.jpeg" alt="drawing" width= "300"/>
+
+# III. Coding Stacks
+Working with stacks is not that difficult. In fact, there is a chance that you have already used this method before without knowing. To understand how to use stacks in python we need to lay the ground work. 
+
+First off, creating the stack. This can be done by typing the name you want for the stack, an equal sign, then an empty bracket.
+``` python
+stack = []
+```
+You could also fill the stack from here like so:
+``` python
+stack = ['A', 'B', 'C']
+```
+In this example, 'A' would be the Front of the stack with 'C' as the Back.
+
+If we were to push an item to the empty list above, we would use the 'append' opperation. Append adds an item to the back of the stack. This can be done using this method.
+``` python
+stack = []
+stack.append('A')
+# If we were print stack from this point it would display "['A']"
+```
+If we wanted to remove an item from a list we would use the 'pop' apperation. This will remove the most recent item added to the stack. This can be done using the following method:
+``` python
+stack = ['A', 'B', 'C']
+stack.pop()
+# If we were print stack from this point it would display "['A', 'B']"
+```
+Note: You can also place a number inside the parenthesis to remove the item in that spot
+``` python
+stack = ['A', 'B', 'C']
+# stack = [0, 1, 2]
+stack.pop(1)
+# If we were print stack from this point it would display "['A', 'C']"
+```
+
+Extra Code To Use With Stacks:
+``` python
+stack = ['A', 'B', 'C']
+len(stack) # This will return the number of items in the stack.
+
+for i in stack: 
+    print(i) #This will iterate through each item in the stack individually 
+
+stack.clear() # This will remove all items from the stack
+```
+[Code Example](stacks.py)
