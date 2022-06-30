@@ -16,7 +16,7 @@ Some of the terms that you need to understand when working with stacks are: Push
 
 <img src="terms.jpeg" alt="terms" width= "300"/>
 
-# III. Coding Stacks
+# III. Coding With Stacks
 Working with stacks is not that difficult. In fact, there is a chance that you have already used this method before without knowing. To understand how to use stacks in python we need to lay the ground work. 
 
 First off, creating the stack. This can be done by typing the name you want for the stack, an equal sign, then an empty bracket.
@@ -35,12 +35,15 @@ stack = []
 stack.append('A')
 # If we were print stack from this point it would display "['A']"
 ```
-If we wanted to remove an item from a list we would use the 'pop' apperation. This will remove the most recent item added to the stack. This can be done using the following method:
+If we wanted to remove an item from a list we would use the 'pop' opperation. This will remove the most recent item added to the stack. This can be done using the following method:
 ``` python
 stack = ['A', 'B', 'C']
 stack.pop()
 # If we were print stack from this point it would display "['A', 'B']"
 ```
+<details>
+<summary>Extra 'pop' Information</summary>
+
 Note: You can also place a number inside the parenthesis to remove the item in that spot
 ``` python
 stack = ['A', 'B', 'C']
@@ -48,8 +51,11 @@ stack = ['A', 'B', 'C']
 stack.pop(1)
 # If we were print stack from this point it would display "['A', 'C']"
 ```
+</details>
 
-Extra Code To Use With Stacks:
+<details>
+<summary>Extra Opperations To Use With Stacks:</summary>
+
 ``` python
 stack = ['A', 'B', 'C']
 len(stack) # This will return the number of items in the stack.
@@ -59,12 +65,79 @@ for i in stack:
 
 stack.clear() # This will remove all items from the stack
 ```
+</details>
 
 [Full Code Example](stacks.py)
 
-<details>
-<summary>Click to toggle contents of `code`</summary>
+# III Practice Code
+In this example I would like you to take this code and attempt to solve it on your own before looking at the solution. 
+
+``` python
+'''
+For this activity, you are goin to populate this code to add the phrase 'This code 
+is successful' to a stack ONE WORD AT A TIME. You will then remove that phrase ONE
+WORD AT A TIME. You will start with an empty list and end with an empty list.
+
+Hint: You could use a for loop to remove each item from the list. 
+        EXP: for i in range(len(stack)):
+'''
+
+def add_remove(stack):
+    print(stack)
+    # add to stack below here
+    stack.append('This')
+    stack.append('code')
+    stack.append('is')
+    stack.append('successful')
+    # add to stack above here
+    print(*stack, sep = " ") # print each item in the stack with a space between
+    # remove from stack below here
+    for i in range(len(stack)):
+        stack.pop()
+    # remove from stack abovehere
+    print(stack)
+stack = []
+add_remove(stack)
+
 ```
-CODE!
+
+
+
+<details>
+<summary>Solution</summary>
+
+``` python
+'''
+Creator: Dexter Davenport
+CSE 212
+June 30, 2022
+'''
+'''
+For this activity, you are goin to populate this code to add the phrase 'This code 
+is successful' to a stack ONE WORD AT A TIME. You will then remove that phrase ONE
+WORD AT A TIME. You will start with an empty list and end with an empty list. 
+
+Hint: You could use a for loop to remove each item from the list. 
+        EXP: for i in range(len(stack)):
+'''
+
+def add_remove(stack):
+    print(stack) # confirm that the stack is empty
+
+    stack.append('This')
+    stack.append('code')
+    stack.append('is')
+    stack.append('successful')
+
+    print(*stack, sep = " ") # print each item in the stack with a space between
+
+    for i in range(len(stack)): # 'for i in stack:' does not work, you must use a range if using a for loop in this example
+        stack.pop()
+
+    print(stack) # confirm that the stack is empty
+
+stack = [] # create the empty stack to pass into the function
+add_remove(stack)
 ```
 </details>
+
