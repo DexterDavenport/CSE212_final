@@ -84,17 +84,17 @@ Hint: You could use a for loop to remove each item from the list.
 
 def add_remove(stack):
     print(stack)
+
     # add to stack below here
-    stack.append('This')
-    stack.append('code')
-    stack.append('is')
-    stack.append('successful')
+    
     # add to stack above here
+
     print(*stack, sep = " ") # print each item in the stack with a space between
+
     # remove from stack below here
-    for i in range(len(stack)):
-        stack.pop()
+    
     # remove from stack abovehere
+    
     print(stack)
 stack = []
 add_remove(stack)
