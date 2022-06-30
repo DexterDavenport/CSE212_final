@@ -1,6 +1,7 @@
 # Programming with Data Structures Tutorial
 ## I. [Welcome](0-welcome.md)
-* Welcome to my Understanding of Programming with Data Structures. In this documentation I will be showing you how to use queues, Linked list, and Trees using the programming language Python.
+* Welcome to my Understanding of Programming with Data Structures. In this documentation I will be showing you how to use Stacks, Linked list, and Trees using the programming language Python.
+
 * Contact Info: dav20041@byui.edu - (480)561-8469
 ## II. [Stacks](1-stacks.md)
 * Introduction
