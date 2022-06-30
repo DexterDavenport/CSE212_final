@@ -62,9 +62,9 @@ stack.clear() # This will remove all items from the stack
 
 [Full Code Example](stacks.py)
 
-```{toggle} Click the button to reveal!
-:show:
-Some hidden toggle content!
-
-![](../images/cool.jpg)
+<details>
+<summary>Click to toggle contents of `code`</summary>
 ```
+CODE!
+```
+</details>
