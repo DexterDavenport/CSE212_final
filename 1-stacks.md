@@ -23,12 +23,20 @@ First off, creating the stack. This can be done by typing the name you want for 
 ``` python
 stack = []
 ```
+
+</details>
+
+<details>
+<summary>Filling the Stack While Creating It</summary>
+
 You could also fill the stack from here like so:
 ``` python
 stack = ['A', 'B', 'C']
 ```
-In this example, 'A' would be the Front of the stack with 'C' as the Back.
 
+In this example, 'A' would be the Front of the stack with 'C' as the Back.
+</details>
+<br />
 If we were to push an item to the empty list above, we would use the 'append' operation. Append adds an item to the back of the stack. This can be done using this method.
 ``` python
 stack = []
@@ -41,6 +49,8 @@ stack = ['A', 'B', 'C']
 stack.pop()
 # If we were print stack from this point it would display "['A', 'B']"
 ```
+
+<br />
 <details>
 <summary>Extra 'pop' Information</summary>
 
@@ -52,7 +62,7 @@ stack.pop(1)
 # If we were print stack from this point it would display "['A', 'C']"
 ```
 </details>
-
+<br />
 <details>
 <summary>Extra Operations To Use With Stacks:</summary>
 
@@ -68,7 +78,7 @@ stack.clear() # This will remove all items from the stack
 </details>
 
 [Full Code Example](stacks.py)
-
+<br />
 # III Practice Code
 In this example I would like you to take this code and attempt to solve it on your own before looking at the solution. 
 
