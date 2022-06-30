@@ -24,6 +24,7 @@ def add_remove(stack):
 
     for i in range(len(stack)): # 'for i in stack:' does not work, you must use a range if using a for loop in this example
         stack.pop()
+        print(*stack, sep = " ")
 
     print(stack) # confirm that the stack is empty
 

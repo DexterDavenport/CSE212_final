@@ -1,7 +1,7 @@
 # Stacks
-Stacks is a data structure that uses the LIFO (last in, first out) method. This is used as a way to prioritize the order in which task are complete within your program. 
+Stacks are a data structure that is use in python. This data staucture uses the LIFO (last in, first out) method. This is used as a way to prioritize the order in which task are complete within your program. 
 
-# I. Pringles
+# I. Pringles Example
 A good example of the LIFO rule would be to look at a can of Pringles. With this, the factory will load all of the chips into a cylinder can. The first chip in the can will go to the very bottom. Every following chip will be placed on top of the previous chip. With this, the first chip that the consumer can access is the last chip that was placed into the can. The last chip in is the first chip out. 
 
 <img src="pringles.jpeg" alt="pringles" width="300" />
@@ -105,6 +105,12 @@ add_remove(stack)
 <details>
 <summary>Solution</summary>
 
+Note: This is not the only solution. You may have done this differently. As long as you followed all of the criteria, that is okay. 
+
+In this solution you can see that I added each item to the stack one at a time using the append function. When you do not already have a list of the items (and the items being added are a small number like this), this is one of the best ways to place each item in the stack. 
+
+When I was removing the items from the stack, you can see that I used a for loop. In this specific example I used 'for i in range(len(stack)):' This made it so that the for loop would count the number of items in the stack and run the loop that number of times. Each time it ran I removed the item at the back of the list until there were no more items left. I also added a print statement so you can see the sentence get shorter every time it runs.
+
 ``` python
 '''
 Creator: Dexter Davenport
@@ -132,6 +138,7 @@ def add_remove(stack):
 
     for i in range(len(stack)): # 'for i in stack:' does not work, you must use a range if using a for loop in this example
         stack.pop()
+        print(*stack, sep = " ")
 
     print(stack) # confirm that the stack is empty
 
@@ -140,3 +147,14 @@ add_remove(stack)
 ```
 </details>
 
+
+
+
+----------
+Sources Used:
+
+[CIT 212 - W03 Prepare: Reading](https://byui-cse.github.io/cse212-course/lesson03/03-prepare.html#1.4)
+
+[Pringles](https://p.turbosquid.com/ts-thumb/Zk/I5lyY1/ix/open_pringles_original_potato_chips_small_can_360/jpg/1633470052/600x600/turn_fit_q87/725646f9af3dac2f58fefe82ce81331341809af1/open_pringles_original_potato_chips_small_can_360-1.jpg)
+
+[Stacks Image](https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Data_stack.svg/2000px-Data_stack.svg.png)
