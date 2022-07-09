@@ -9,9 +9,11 @@
 * Code Example
 * Practice Code
 * Practice Code Solution
-## III. [Linked List](2-linked_list.md)
+## III. [Linked Lists](2-linked_list.md)
 * Introduction
 * Nodes Explained <!--Explain heads and tails and relate it to a chaine-->
+* Adding to Linked List
+* Removing From Linked List
 * Code Example
 * Practice Code
 * Practice Code Solution

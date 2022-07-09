@@ -1,6 +1,9 @@
 # Stacks
 Stacks are a data structure that is use in python. This data staucture uses the LIFO (last in, first out) method. This is used as a way to prioritize the order in which task are complete within your program. 
 
+
+* When do we use it
+
 # I. Pringles Example
 A good example of the LIFO rule would be to look at a can of Pringles. With this, the factory will load all of the chips into a cylinder can. The first chip in the can will go to the very bottom. Every following chip will be placed on top of the previous chip. With this, the first chip that the consumer can access is the last chip that was placed into the can. The last chip in is the first chip out. 
 
@@ -9,6 +12,7 @@ A good example of the LIFO rule would be to look at a can of Pringles. With this
 # II. Terms
 Some of the terms that you need to understand when working with stacks are Push, Pop, Front, and Back
 
+* Big-O
 * Push - This is when you place an item into the stack
 * Pop - This is when you remove an Item from the stack
 * Front - Using the Pringle example, this would be the bottom of the can/ the first chips placed into the can
@@ -20,6 +24,7 @@ Some of the terms that you need to understand when working with stacks are Push,
 Working with stacks is not that difficult. In fact, there is a chance that you have already used this method before without knowing. To understand how to use stacks in python we need to lay the groundwork. 
 
 First off, creating the stack. This can be done by typing the name you want for the stack, an equal sign, then an empty bracket.
+
 ``` python
 stack = []
 ```
@@ -30,6 +35,7 @@ stack = []
 <summary>Filling the Stack While Creating It</summary>
 
 You could also fill the stack from here like so:
+
 ``` python
 stack = ['A', 'B', 'C']
 ```
@@ -38,6 +44,7 @@ In this example, 'A' would be the Front of the stack with 'C' as the Back.
 </details>
 <br />
 If we were to push an item to the empty list above, we would use the 'append' operation. Append adds an item to the back of the stack. This can be done using this method.
+
 ``` python
 stack = []
 stack.append('A')
