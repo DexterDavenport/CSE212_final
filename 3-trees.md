@@ -48,8 +48,8 @@ The difference between a BST and a Balanced Binary Search Tree (Balanced BST) is
 <summary>Image Examples</summary>
 <br>
 
-<img src="bstlable.png" alt="bst" width="252" />
-<img src="balancedbst.png" alt="bst" width="330" />
+<img src="bstlable.png" alt="bs labled" width="252" />
+<img src="balancedbst.png" alt="balanced bst" width="345" />
 
 </details>
 <br>
