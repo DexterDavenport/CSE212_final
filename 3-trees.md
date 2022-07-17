@@ -42,7 +42,7 @@ If you started a BST with the number 5, that would be your root. Then if your ne
 
 # Balanced Binary Search Tree
 
-The difference between a BST and a Balanced Binary Search Tree (Balanced BST) is that with a Balanced BST, you will never have a subtree longer than it needs to be. 
+The difference between a BST and a Balanced Binary Search Tree (Balanced BST) is that with a Balanced BST, you will never have a subtree longer than it needs to be. For this you would rearrange the tree to have as close to equal lengths on both sides as possible. 
 
 <details>
 <summary>Image Examples</summary>
