@@ -1,6 +1,6 @@
 # Linked Lists
 
-Linked list are a great we for organization of data. Much like a physical chain, a linked list is a list of items all connected to eachother. Each item in the list is called a node. All of the items can be stored throughout the memory of your device with each node holding a path to the previous and next node.
+Linked list is a great method for organization of data. Much like a physical chain, a linked list is a list of items all connected to eachother. Each item in the list is called a node. All of the items can be stored throughout the memory of your device with each node holding a path to the previous and next node.
 
 # Nodes
 

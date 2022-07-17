@@ -12,11 +12,16 @@ A good example of the LIFO rule would be to look at a can of Pringles. With this
 # II. Terms
 Some of the terms that you need to understand when working with stacks are Push, Pop, Front, and Back
 
-* Big-O
 * Push - This is when you place an item into the stack
 * Pop - This is when you remove an Item from the stack
 * Front - Using the Pringle example, this would be the bottom of the can/ the first chips placed into the can
 * Back - This refers to the side with the most recent items added to the stack
+
+# Big-O Notation
+
+When talking about data structures it is important to also understand Big-O notation. This is a way to measure the efficency of an algorithm. 
+
+Here is a link with more information about [Big-O notation](https://www.freecodecamp.org/news/big-o-notation-why-it-matters-and-why-it-doesnt-1674cfa8a23c/)
 
 <img src="terms.jpeg" alt="terms" width= "300"/>
 
@@ -171,6 +176,8 @@ add_remove(stack)
 Sources Used:
 
 [CIT 212 - W03 Prepare: Reading](https://byui-cse.github.io/cse212-course/lesson03/03-prepare.html#1.4)
+
+[Big-O notation](https://www.freecodecamp.org/news/big-o-notation-why-it-matters-and-why-it-doesnt-1674cfa8a23c/)
 
 [Pringles](https://p.turbosquid.com/ts-thumb/Zk/I5lyY1/ix/open_pringles_original_potato_chips_small_can_360/jpg/1633470052/600x600/turn_fit_q87/725646f9af3dac2f58fefe82ce81331341809af1/open_pringles_original_potato_chips_small_can_360-1.jpg)
 
