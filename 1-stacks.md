@@ -1,9 +1,6 @@
 # Stacks
 Stacks are a data structure that is use in python. This data staucture uses the LIFO (last in, first out) method. This is used as a way to prioritize the order in which task are complete within your program. 
 
-
-* When do we use it
-
 # I. Pringles Example
 A good example of the LIFO rule would be to look at a can of Pringles. With this, the factory will load all of the chips into a cylinder can. The first chip in the can will go to the very bottom. Every following chip will be placed on top of the previous chip. With this, the first chip that the consumer can access is the last chip that was placed into the can. The last chip in is the first chip out. 
 

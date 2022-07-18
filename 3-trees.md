@@ -63,6 +63,8 @@ More infor about [Balanced Binary Search Tree](https://www.tutorialspoint.com/ba
 Read through the comments on this code.
 
 ``` python
+
+# Ignore this
 class Node:
     def __init__(self, val=None):
         '''
@@ -72,6 +74,7 @@ class Node:
         self.left = None
         self.right = None
         self.val = val
+# Ignore this
 
     def insert(self, val):
         '''
