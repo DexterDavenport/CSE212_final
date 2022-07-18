@@ -60,6 +60,51 @@ More infor about [Balanced Binary Search Tree](https://www.tutorialspoint.com/ba
 
  When inserting into a BST you will need to understand recursion. If you do not know about recursion please watch [this video](https://www.youtube.com/watch?v=wMNrSM5RFMc). 
 
+Read through the comments on this code.
+
+``` python
+class Node:
+    def __init__(self, val=None):
+        '''
+        Initialize the node
+        '''
+
+        self.left = None
+        self.right = None
+        self.val = val
+
+    def insert(self, val):
+        '''
+        This function will allow you to insert your data into the
+        tree. 
+        '''
+
+        # Check if self.val is empty, if so make it equal to the value you passed in
+        if not self.val:
+            self.val = val
+            return
+        # Check to see if the number is less than the current value
+        if val < self.val:
+            # Check to see if self.left is carrying a value
+            if self.left:
+                # If so call the function again
+                self.left.insert(val)
+                return
+            # If you have found the end of a tree, place the value there
+            self.left = Node(val)
+            return
+        # Check to see if self.right is carrying a value
+        if self.right:
+            # If so call the function again
+            self.right.insert(val)
+            return
+        # If you have found the end of a tree, place the value there
+        self.right = Node(val)
+```
+
+
+
+
 <br>
 
 # Code Problem
@@ -79,7 +124,6 @@ class Node:
 
 
 
-    # Finish this function
     def insert(self, val):
         '''
         This function will allow you to insert your data into the
@@ -89,9 +133,6 @@ class Node:
         # Check if self.val is empty, if so make it equal to the value you passed in
         if not self.val:
             self.val = val
-            return
-        # Check if self.val is equal to the value you passed in, if so return
-        if self.val == val:
             return
         # Check to see if the number is less than the current value
         if val < self.val:
@@ -224,9 +265,6 @@ class Node:
         # Check if self.val is empty, if so make it equal to the value you passed in
         if not self.val:
             self.val = val
-            return
-        # Check if self.val is equal to the value you passed in, if so return
-        if self.val == val:
             return
         # Check to see if the number is less than the current value
         if val < self.val:
