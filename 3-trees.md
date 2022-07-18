@@ -56,13 +56,286 @@ The difference between a BST and a Balanced Binary Search Tree (Balanced BST) is
 
 More infor about [Balanced Binary Search Tree](https://www.tutorialspoint.com/balanced-binary-tree-in-python) in python
 
+ # Inserting Into BST
 
+ When inserting into a BST you will need to understand recursion. If you do not know about recursion please watch [this video](https://www.youtube.com/watch?v=wMNrSM5RFMc). 
 
 <br>
 
-* Code Example
-* Practice Code
-* Practice Code Solution
+# Code Problem
+
+For this problem you will need to populate the 'in_list' and 'ordered' functions to get the desired output. Please refure to the 'insert' function for help. 
+
+``` python
+class Node:
+    def __init__(self, val=None):
+        '''
+        Initialize the node
+        '''
+
+        self.left = None
+        self.right = None
+        self.val = val
+
+
+
+    # Finish this function
+    def insert(self, val):
+        '''
+        This function will allow you to insert your data into the
+        tree. 
+        '''
+
+        # Check if self.val is empty, if so make it equal to the value you passed in
+        if not self.val:
+            self.val = val
+            return
+        # Check if self.val is equal to the value you passed in, if so return
+        if self.val == val:
+            return
+        # Check to see if the number is less than the current value
+        if val < self.val:
+            if self.left:
+                # If it is less it will call the function again recursively
+                self.left.insert(val)
+                return
+            self.left = Node(val)
+            return
+        if self.right:
+            # If it is greater it will call the function again recursively
+            self.right.insert(val)
+            return
+        self.right = Node(val)
+
+        if self.right:
+            # If it is greater it will call the function again recursively
+            self.right.insert(val)
+            return
+        self.right = Node(val)
+
+
+    # Finish this function
+    def in_list(self, val):
+        '''
+        This function will look through the whole list to see if the 
+        val is in the tree. 
+        '''
+
+        # Add your code Below
+
+
+
+        # Add your code Above
+
+
+    # Finish this function
+    def ordered(self, vals):
+        '''
+        This function will check whole left side of the tree then the 
+        right side of the tree while adding each leaf to the empty list
+        (vals). Checking in this order will make the list order itself 
+        from smallest to biggest.
+        '''
+
+        # Add your code Below
+
+
+
+        # Add your code Above
+
+        
+
+def main():
+    # Create a list or random numbers
+    nums = [20, 1, 19, 2, 18, 3, 17, 4, 16, 5]
+    bst = Node()
+
+    # Run the insert statement for each number in the nums list
+    for num in nums:
+        bst.insert(num)
+    print("Unordered List: ")
+    print(nums)
+    print("Ordered List: ")
+    print(bst.ordered([]))
+    print()
+
+    for i in range(1,10):
+        print(f"Is {i} in the tree: ")
+        # Check if each number in the range is or is not in the tree
+        print(bst.in_list(i))
+
+main()
+
+
+'''
+OUTPUT:
+
+Unordered List: 
+[20, 1, 19, 2, 18, 3, 17, 4, 16, 5]
+Ordered List: 
+[1, 2, 3, 4, 5, 16, 17, 18, 19, 20]
+
+Is 1 in the tree: 
+True
+Is 2 in the tree: 
+True
+Is 3 in the tree: 
+True
+Is 4 in the tree: 
+True
+Is 5 in the tree: 
+True
+Is 6 in the tree: 
+False
+Is 7 in the tree: 
+False
+Is 8 in the tree: 
+False
+Is 9 in the tree: 
+False
+'''
+
+
+```
+
+<details>
+<summary>Solution</summary>
+
+<br>
+
+``` python
+
+class Node:
+    def __init__(self, val=None):
+        '''
+        Initialize the node
+        '''
+
+        self.left = None
+        self.right = None
+        self.val = val
+        
+    def insert(self, val):
+        '''
+        This function will allow you to insert your data into the
+        tree. 
+        '''
+
+        # Check if self.val is empty, if so make it equal to the value you passed in
+        if not self.val:
+            self.val = val
+            return
+        # Check if self.val is equal to the value you passed in, if so return
+        if self.val == val:
+            return
+        # Check to see if the number is less than the current value
+        if val < self.val:
+            if self.left:
+                # If it is less it will call the function again recursively
+                self.left.insert(val)
+                return
+            self.left = Node(val)
+            return
+        if self.right:
+            # If it is greater it will call the function again recursively
+            self.right.insert(val)
+            return
+        self.right = Node(val)
+
+    def in_list(self, val):
+        '''
+        This function will look through the whole list to see if the 
+        val is in the tree. 
+        '''
+
+        # Check to see if the current value is equal the the value you are looking for
+        if val == self.val:
+            return True
+        # Check if the value is less than the one you are looking for 
+        if val < self.val:
+            # If you have reached the end of the tree and have not found the value, return False
+            if self.left == None:
+                return False
+            # If you have not found the end or the value, call the funtion again
+            return self.left.in_list(val)
+        # If you have reached the end of the tree and have not found the value, return False
+        if self.right == None:
+            return False
+        # If you have not found the end or the value, call the funtion again
+        return self.right.in_list(val)
+
+    def ordered(self, vals):
+        '''
+        This function will check whole left side of the tree then the 
+        right side of the tree. Checking in this order will make the 
+        list order itself from smallest to biggest.
+        '''
+
+        # If you have not reached the end of the tree, call the function again
+        if self.left is not None:
+            self.left.ordered(vals)
+        # If value is not none add it to the list of values
+        if self.val is not None:
+            vals.append(self.val)
+        # If you have not reached the end of the tree, call the function again
+        if self.right is not None:
+            self.right.ordered(vals)
+        return vals
+
+def main():
+    # Create a list or random numbers
+    nums = [20, 1, 19, 2, 18, 3, 17, 4, 16, 5]
+    bst = Node()
+
+    # Run the insert statement for each number in the nums list
+    for num in nums:
+        bst.insert(num)
+    print("Unordered List: ")
+    print(nums)
+    print("Ordered List: ")
+    print(bst.ordered([]))
+    print()
+
+    for i in range(1,10):
+        print(f"Is {i} in the tree: ")
+        # Check if each number in the range is or is not in the tree
+        print(bst.in_list(i))
+
+main()
+
+
+'''
+OUTPUT:
+
+Unordered List: 
+[20, 1, 19, 2, 18, 3, 17, 4, 16, 5]
+Ordered List: 
+[1, 2, 3, 4, 5, 16, 17, 18, 19, 20]
+
+Is 1 in the tree: 
+True
+Is 2 in the tree: 
+True
+Is 3 in the tree: 
+True
+Is 4 in the tree: 
+True
+Is 5 in the tree: 
+True
+Is 6 in the tree: 
+False
+Is 7 in the tree: 
+False
+Is 8 in the tree: 
+False
+Is 9 in the tree: 
+False
+'''
+
+
+```
+
+</details>
 
 <br>
 ----------
@@ -73,3 +346,7 @@ Sources Used:
 [Tree Image](https://cdn.programiz.com/sites/tutorial2program/files/perfect-binary-tree_0.png)
 
 [Balanced Binary Search Tree](https://www.tutorialspoint.com/balanced-binary-tree-in-python)
+
+[Source Used For Code](https://blog.boot.dev/computer-science/binary-search-tree-in-python/)
+
+
